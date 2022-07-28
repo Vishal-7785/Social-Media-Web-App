@@ -1,0 +1,21 @@
+#layout-header nav {
+  display: flex;
+  padding: 0 10px;
+  background: #2196f3;
+  color: white;
+  box-shadow: 1px 1px 1px 1px lightgrey; }
+  #layout-header nav #user-name {
+    margin-left: 80%;
+    padding-top: 30px;
+    font-size: larger; }
+  #layout-header nav #sign-out-button {
+    margin-left: 2.5%;
+    padding-top: 30px;
+    font-size: larger; }
+  #layout-header nav #sign-in-button {
+    margin-left: 78%;
+    padding-top: 30px;
+    font-size: larger; }
+  #layout-header nav a {
+    color: white;
+    text-decoration: none; }
