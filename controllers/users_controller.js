@@ -9,6 +9,9 @@ module.exports.profile = function(req,res){
 
 // redner sign-up page
 module.exports.signUp = function(req,res){
+    if(req.isAuthenticated()){
+        return res.redirect('/users/profile');
+    }
     res.render('user_sign_up',{
         title: "Codeial | Sign Up"
     });
@@ -16,6 +19,9 @@ module.exports.signUp = function(req,res){
 
 // redner sign-in page
 module.exports.signIn = function(req,res){
+    if(req.isAuthenticated()){
+        return res.redirect('/users/profile');
+    }
     res.render('user_sign_in',{
         title: "Codeial | Sign In"
     });
@@ -49,5 +55,13 @@ module.exports.signIn = function(req,res){
  }
 // Sign in and create session for the user
  module.exports.createSession = function(req,res){
-    // Todo Later
+    return res.redirect('/');
  }
+
+// Logging out user
+ module.exports.destroySession = function(req, res){
+    req.logout(function(err) {
+        if (err) { return next(err); }
+ })
+    res.redirect('/');
+}
