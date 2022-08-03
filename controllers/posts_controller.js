@@ -8,7 +8,8 @@ module.exports.create = async function(req, res){
             });
 
             if (req.xhr){
-               return res.status(200).json({
+            post = await post.populate('user');
+            return res.status(200).json({
                    data: {
                        post: post
                    },
