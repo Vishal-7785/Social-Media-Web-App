@@ -1,0 +1,63 @@
+body{
+    background-image: url("https://i.pinimg.com/originals/01/e8/02/01e80267f63bce9fcae94e29bf3acfd3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-position: ;
+//background-color: #191970;
+#google-sign-in-button{
+    display: block;
+    margin-left: 400px;
+    margin-top: 50px;
+    font-size: 2rem;
+    border-radius: 50px;
+    width: 420px;
+    padding: 10px;
+    background-color: darkslategray;
+    #google-sign-in-a-tag{
+        text-decoration: none;
+        color: white;
+    }
+
+}
+#email-form{
+    display: block;
+    margin-left: 400px;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    border-radius: 50px;
+    background-color: darkslategray;
+}
+#password-form{
+    display: block;
+    margin-top: 20px;
+    margin-left: 400px;
+    font-size: 2.5rem;
+    border-radius: 50px;
+    background-color: darkslategray;
+    color: azure;
+}
+#sign-in-butto{
+    display: block;
+    margin-top: 20px;
+    margin-left: 540px;
+    font-size: 2rem;
+    border-radius: 50px;
+    background-color: darkslategray;
+    
+}
+#unknown-sign-up{
+    margin-left: 400px;
+    font-size: 2rem;
+    color: white;
+}
+#sign-up-b{
+    margin-left: 720px;
+    margin-top: -60px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+#sign-up-but{
+    text-decoration: none;
+    color: grey;
+}
+}

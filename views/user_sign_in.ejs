@@ -1,13 +1,18 @@
-<h1>
-    Sign In
-</h1>
+<link rel="stylesheet" href="/css/sign-in.css">
 
+<button id="google-sign-in-button">
+    <a id="google-sign-in-a-tag" href="/users/auth/google"> Google SignIn/SignUp </a>
+</button>
 <form action="/users/create-session" method="POST">
-    <input type="email" name= "email" placeholder=" Email" required>
-    <input type="password" name= "password" placeholder=" Password" required>
-    <input type="Submit" value ="Sign In">
+    <input id="email-form" type="email" name= "email" placeholder=" Email" required>
+    <input id="password-form" type="password" name= "password" placeholder=" Password" required>
+    <input id="sign-in-butto" type="Submit" value ="Sign In">
 </form>
-
-<p> 
-    <a href="/users/auth/google"> Google SignIn/SignUp </a>
-  </p>
+<br>
+<br>
+<div>
+    <p id="unknown-sign-up">Don't have an account? </p>
+    <button id="sign-up-b" >
+        <a id="sign-up-but"  href="/users/sign-up"> SignUp </a>
+    </button>
+</div>
